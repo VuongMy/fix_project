@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "Static pages" do
 
   describe "Home page" do
-
+     before { visit root_path }
     it "should have the h1 'Sample App'" do
       visit root_path
       expect(page).to have_content('Sample App')
